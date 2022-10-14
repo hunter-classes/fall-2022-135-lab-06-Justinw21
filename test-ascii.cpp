@@ -1,7 +1,9 @@
 #include <iostream>
 
-void ascii(std::string input)
+void ascii()
 {
+    std::string input;
+    std::getline(std::cin, input);
     for(int i = 0; i < input.length(); i++)
     {
         char letter = input[i];
@@ -11,6 +13,6 @@ void ascii(std::string input)
 
 int main()
 {
-    ascii("Cat Dog");
+    ascii();
     return 0;
 }
